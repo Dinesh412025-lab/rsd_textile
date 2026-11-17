@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Login | RSD Textile</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <form class="form" id="loginForm">
+    <h2>Login</h2>
+    <p class="sub">Log in to place orders and track your orders.</p>
+    <div class="tabs">
+      <button type="button" class="on" data-mode="pass">Email</button>
+      <button type="button" data-mode="otp">Mobile OTP</button>
+    </div>
+    <label for="id" id="idLabel">Email</label>
+    <input id="id" required placeholder="you@example.com">
+    <div id="passRow">
+      <label for="pw">Password</label>
+      <input id="pw" type="password" placeholder="Enter your password">
+    </div>
+    <button class="btn" type="submit">Login</button>
+    <p class="msg" id="msg" role="status"></p>
+    <p style="margin-top:1rem;font-size:.9rem">New here? <a href="#" style="color:var(--madder);font-weight:700">Create an account</a></p>
+  </form>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
